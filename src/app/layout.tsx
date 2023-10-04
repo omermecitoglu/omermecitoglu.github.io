@@ -1,5 +1,40 @@
 import React, { type ReactNode } from "react";
 import AppLayout from "~/components/AppLayout";
+import type { Metadata } from "next";
+import type { Icon } from "next/dist/lib/metadata/types/metadata-types";
+
+const favicons: Icon[] = [];
+
+if (process.env.FAVICON_URL_16) {
+  favicons.push({ url: process.env.FAVICON_URL_16, sizes: "16x16", type: "image/png" });
+}
+if (process.env.FAVICON_URL_32) {
+  favicons.push({ url: process.env.FAVICON_URL_32, sizes: "32x32", type: "image/png" });
+}
+if (process.env.FAVICON_URL_96) {
+  favicons.push({ url: process.env.FAVICON_URL_96, sizes: "96x96", type: "image/png" });
+}
+if (process.env.FAVICON_URL_192) {
+  favicons.push({ url: process.env.FAVICON_URL_192, sizes: "192x192", type: "image/png" });
+}
+
+export const metadata: Metadata = {
+  title: process.env.SEO_TITLE,
+  description: process.env.SEO_DESCRIPTION,
+  keywords: process.env.SEO_KEYWORDS?.split(","),
+  authors: [{ name: process.env.PROFILE_NAME, url: process.env.PROFILE_GITHUB_URL }],
+  creator: process.env.PROFILE_NAME,
+  publisher: process.env.PROFILE_NAME,
+  colorScheme: "dark",
+  icons: {
+    icon: favicons,
+  },
+  openGraph: {
+    title: process.env.SEO_TITLE,
+    description: process.env.SEO_DESCRIPTION,
+    type: "profile",
+  },
+};
 
 type RootLayoutProps = {
   children: ReactNode,

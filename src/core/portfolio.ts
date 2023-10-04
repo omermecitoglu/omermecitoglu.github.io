@@ -13,9 +13,8 @@ export type PortfolioProject = {
 export async function getPortfolio() {
   const documents = await getDocuments("portfolio");
   if (!documents) return [];
-  const cityList = documents.map<PortfolioProject>(doc => ({
+  return documents.map<PortfolioProject>(doc => ({
     ...doc.data() as PortfolioProject,
     id: doc.id,
   }));
-  return cityList;
 }
