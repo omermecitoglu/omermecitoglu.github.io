@@ -5,7 +5,7 @@ import { faUser } from "@fortawesome/free-solid-svg-icons/faUser";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classNames from "classnames";
 import React, { useEffect, useState } from "react";
-import Nav from "react-bootstrap/esm/Nav";
+import Nav from "react-bootstrap/Nav";
 import { findMostVisibleSection } from "~/core/section";
 
 const Navigation = () => {
