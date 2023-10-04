@@ -1,7 +1,8 @@
 $header-width: 20rem;
+$theme-color: #040B14;
 
 header {
-  background-color: #040B14;
+  background-color: $theme-color;
   
   @media (min-width: 992px) {
     width: $header-width;

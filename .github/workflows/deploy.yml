@@ -36,6 +36,7 @@ jobs:
       HERO_BACKGROUND_URL: ${{ vars.HERO_BACKGROUND_URL }}
       HERO_TITLES: ${{ vars.HERO_TITLES }}
       CAREER_START_YEAR: ${{ vars.CAREER_START_YEAR }}
+      WEBSITE_URL: ${{ vars.WEBSITE_URL }}
       SEO_TITLE: ${{ vars.SEO_TITLE }}
       SEO_DESCRIPTION: ${{ vars.SEO_DESCRIPTION }}
       SEO_KEYWORDS: ${{ vars.SEO_KEYWORDS }}

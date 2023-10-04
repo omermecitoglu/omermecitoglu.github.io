@@ -26,9 +26,11 @@ export const metadata: Metadata = {
   creator: process.env.PROFILE_NAME,
   publisher: process.env.PROFILE_NAME,
   colorScheme: "dark",
+  themeColor: "#040B14",
   icons: {
     icon: favicons,
   },
+  metadataBase: new URL(process.env.WEBSITE_URL || "https://google.com"),
   openGraph: {
     title: process.env.SEO_TITLE,
     description: process.env.SEO_DESCRIPTION,
