@@ -1,0 +1,49 @@
+$header-width: 20rem;
+
+header {
+  background-color: #040B14;
+  
+  @media (min-width: 992px) {
+    width: $header-width;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+
+  & img {
+    border-radius: 100%;
+    border: 0.5rem solid rgba(var(--bs-secondary-rgb), 1);
+  }
+}
+
+main {
+  @media (min-width: 992px) {
+    padding-left: $header-width;
+  }
+}
+
+#home {
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+
+  &:before {
+    content: "";
+    background: rgba(5, 13, 24, 0.3);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  & .container {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+}

@@ -1,0 +1,16 @@
+.portfolio-project {
+  & img {
+    height: 12rem;
+    object-fit: contain;
+  }
+
+  & .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    & .card-text {
+      flex-grow: 1;
+    }
+  }
+}
