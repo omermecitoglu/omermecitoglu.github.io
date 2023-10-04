@@ -36,6 +36,13 @@ jobs:
       HERO_BACKGROUND_URL: ${{ vars.HERO_BACKGROUND_URL }}
       HERO_TITLES: ${{ vars.HERO_TITLES }}
       CAREER_START_YEAR: ${{ vars.CAREER_START_YEAR }}
+      SEO_TITLE: ${{ vars.SEO_TITLE }}
+      SEO_DESCRIPTION: ${{ vars.SEO_DESCRIPTION }}
+      SEO_KEYWORDS: ${{ vars.SEO_KEYWORDS }}
+      FAVICON_URL_16: ${{ vars.FAVICON_URL_16 }}
+      FAVICON_URL_32: ${{ vars.FAVICON_URL_32 }}
+      FAVICON_URL_96: ${{ vars.FAVICON_URL_96 }}
+      FAVICON_URL_192: ${{ vars.FAVICON_URL_192 }}
       FIREBASE_API_KEY: ${{ secrets.FIREBASE_API_KEY }}
       FIREBASE_AUTH_DOMAIN: ${{ secrets.FIREBASE_AUTH_DOMAIN }}
       FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
