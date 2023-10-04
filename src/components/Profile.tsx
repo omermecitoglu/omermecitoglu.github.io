@@ -18,7 +18,7 @@ const Profile = () => (
       style={{ width: "7.5rem", height: "7.5rem" }}
       className="border-secondary" />
     <h1 className="fs-3 text-light m-0">
-      {process.env.PROFILE_NAME}
+      {process.env.PROFILE_NAME || "John Doe"}
     </h1>
     <div className="d-flex gap-2">
       {process.env.FACEBOOK_PROFILE_URL &&
