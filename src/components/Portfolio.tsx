@@ -10,7 +10,7 @@ const Portfolio = async () => {
   const portfolio = await getPortfolio();
   return (
     <section id="portfolio" className="min-vh-100">
-      <Container className="py-3">
+      <Container className="pt-3">
         <h2>My Porfolio</h2>
         <hr />
         <Row>
