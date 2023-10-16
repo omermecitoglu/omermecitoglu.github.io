@@ -15,7 +15,7 @@ const Portfolio = async () => {
         <hr />
         <Row>
           {portfolio.map(project =>
-            <Col key={project.id} xs={12} sm={12} md={6} lg={6} xl={4} xxl={3} className="mb-4">
+            <Col key={project.id} xs={12} sm={12} md={6} lg={6} xl={4} xxl={3} className="mb-3 mb-md-4">
               <Project {...project} />
             </Col>
           )}
