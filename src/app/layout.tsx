@@ -1,6 +1,6 @@
 import React, { type ReactNode } from "react";
 import AppLayout from "~/components/AppLayout";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import type { Icon } from "next/dist/lib/metadata/types/metadata-types";
 
 const favicons: Icon[] = [];
@@ -25,8 +25,6 @@ export const metadata: Metadata = {
   authors: [{ name: process.env.PROFILE_NAME, url: process.env.PROFILE_GITHUB_URL }],
   creator: process.env.PROFILE_NAME,
   publisher: process.env.PROFILE_NAME,
-  colorScheme: "dark",
-  themeColor: "#040B14",
   icons: {
     icon: favicons,
   },
@@ -36,6 +34,11 @@ export const metadata: Metadata = {
     description: process.env.SEO_DESCRIPTION,
     type: "profile",
   },
+};
+
+export const viewport: Viewport = {
+  colorScheme: "dark",
+  themeColor: "#040B14",
 };
 
 type RootLayoutProps = {
