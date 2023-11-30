@@ -34,6 +34,11 @@ export const metadata: Metadata = {
     description: process.env.SEO_DESCRIPTION,
     type: "profile",
   },
+  verification: {
+    other: {
+      "google-adsense-account": "ca-pub-1487783963443396",
+    },
+  },
 };
 
 export const viewport: Viewport = {
