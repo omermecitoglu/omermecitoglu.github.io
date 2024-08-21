@@ -16,23 +16,24 @@ const Profile = () => (
       width={0}
       height={0}
       style={{ width: "7.5rem", height: "7.5rem" }}
-      className="border-secondary" />
+      className="border-secondary"
+    />
     <h1 className="fs-3 text-light m-0">
       {process.env.PROFILE_NAME || "John Doe"}
     </h1>
     <div className="d-flex gap-2">
       {process.env.FACEBOOK_PROFILE_URL &&
-        <SocialLink icon={faFacebookF} url={process.env.FACEBOOK_PROFILE_URL} />}
+      <SocialLink icon={faFacebookF} url={process.env.FACEBOOK_PROFILE_URL} />}
       {process.env.TWITTER_PROFILE_URL &&
-        <SocialLink icon={faXTwitter} url={process.env.TWITTER_PROFILE_URL} />}
+      <SocialLink icon={faXTwitter} url={process.env.TWITTER_PROFILE_URL} />}
       {process.env.INSTAGRAM_PROFILE_URL &&
-        <SocialLink icon={faInstagram} url={process.env.INSTAGRAM_PROFILE_URL} />}
+      <SocialLink icon={faInstagram} url={process.env.INSTAGRAM_PROFILE_URL} />}
       {process.env.PROFILE_GITHUB_URL &&
-        <SocialLink icon={faGithub} url={process.env.PROFILE_GITHUB_URL} />}
+      <SocialLink icon={faGithub} url={process.env.PROFILE_GITHUB_URL} />}
       {process.env.LINKEDIN_PROFILE_URL &&
-        <SocialLink icon={faLinkedinIn} url={process.env.LINKEDIN_PROFILE_URL} />}
+      <SocialLink icon={faLinkedinIn} url={process.env.LINKEDIN_PROFILE_URL} />}
       {process.env.PROFILE_EMAIL &&
-        <SocialLink icon={faEnvelope} url={"mailto:" + process.env.PROFILE_EMAIL} />}
+      <SocialLink icon={faEnvelope} url={"mailto:" + process.env.PROFILE_EMAIL} />}
     </div>
   </div>
 );

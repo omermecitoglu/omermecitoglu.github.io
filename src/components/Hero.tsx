@@ -14,7 +14,10 @@ const Hero = ({
         <div>
           <h1 className="">{process.env.PROFILE_NAME || "John Doe"}</h1>
         </div>
-        <p className="fs-2">I'm <Typing strings={(process.env.HERO_TITLES || "Nothing").split(",")} /></p>
+        <p className="fs-2">
+          I'm
+          <Typing strings={(process.env.HERO_TITLES || "Nothing").split(",")} />
+        </p>
       </div>
     </div>
   </section>
