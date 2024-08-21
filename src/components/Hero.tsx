@@ -16,6 +16,7 @@ const Hero = ({
         </div>
         <p className="fs-2">
           I'm
+          {" "}
           <Typing strings={(process.env.HERO_TITLES || "Nothing").split(",")} />
         </p>
       </div>

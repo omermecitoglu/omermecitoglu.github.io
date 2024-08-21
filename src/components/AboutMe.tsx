@@ -25,7 +25,7 @@ const AboutMe = () => (
       <p>🔧 Problem-solving is second nature to me. I enjoy tackling challenges head-on, finding elegant solutions to complex issues, and optimizing performance to deliver exceptional frontend experiences.</p>
       <p>🤝 Teamwork is essential in any successful project, and I am a firm believer in open communication and collaboration. I cherish the opportunity to work with diverse teams, where ideas flow freely, and innovation thrives.</p>
       <p>📈 I am actively seeking opportunities to contribute my skills to a dynamic organization that shares my passion for creating remarkable digital experiences. If you're looking for a Frontend Developer who is driven, adaptable, and eager to make a meaningful impact, let's connect! I'm excited to explore new possibilities together.</p>
-      <p>
+      <p className="mb-0">
         📬 Feel free to reach out to me via LinkedIn messaging or email at
         {" "}
         <Link href={`mailto:${process.env.PROFILE_EMAIL || "john.doe@example.com"}`}>{process.env.PROFILE_EMAIL || "john.doe@example.com"}</Link>
